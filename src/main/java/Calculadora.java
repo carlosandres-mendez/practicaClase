@@ -1,5 +1,6 @@
 public class Calculadora{
 
+        //propiedades de calculadora
 	String color= "FFFFFF";
 	String nombre;
 	int tamaño;
@@ -13,7 +14,7 @@ public class Calculadora{
         
 	public int sumar(String nombre, int var1, int var2){
 		int resultado; 
-		resultado = var1 + var2;
+		resultado = var1  + var2;
 		return resultado;
 	}  
         

@@ -2,7 +2,7 @@
  *
  * @author carlosandres.mendez
  */
-// Determina si un año es biciesto o no
+//   Determina si un año es biciesto o no
 public class Problema4 {
     
     public static boolean biciesto(int anno){
