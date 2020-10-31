@@ -11,9 +11,45 @@ package main.java;
  */
 public class EjemploArray {
     
+    static String miVarGlobal;
+    
     public static void main(String[] args){
-        String[] miArreglo = {"a","y","r","t"};
+        //generarSubCadenas();
+        generarSplit();
+    }
+    
+    public static void generarSplit(){
+        int resultado=0;
+        String[] arreglo;
+        String texto = "3+4";
+        if(texto.contains("+")){
+            arreglo = texto.split("\\+");
+            int num1 = Integer.parseInt(arreglo[0]);
+            int num2 = Integer.parseInt(arreglo[1]);
+            resultado = num1 + num2;
+        }
+        else if(texto.contains("-")){
+            arreglo = texto.split("-");
+            int num1 = Integer.parseInt(arreglo[0]);
+            int num2 = Integer.parseInt(arreglo[1]);
+            resultado = num1 - num2;
+        }
+        else if(texto.contains("*")){
         
+        }
+        else{
+        
+        }
+        
+        System.out.println("Resultado: "+resultado);
+    }
+    
+    
+    //Este metodo descompone una cadena de texto, 
+    //obtiene el operador que un usuario digito y
+    //realiza la operacion que corresponda con un switch
+    //e imprime el resultado.
+    public static void generarSubCadenas(){
         String texto = "3+4";
         String num1 = texto.substring(0, 1);
         String oper = texto.substring(1, 2);
@@ -39,5 +75,11 @@ public class EjemploArray {
         }
         
         System.out.println("Resultado: "+resultado);
+    }
+    
+    public static void prueba(int numEstudiantes){
+        
+        miVarGlobal="Curso progra I";
+        System.out.println("Resultado: "+miVarGlobal);
     }
 }
