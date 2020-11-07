@@ -18,6 +18,31 @@ public class EjemploArray {
         generarSplit();
     }
     
+    public static void ayudaProblema9(){
+        int vGlobalMAX=1000;
+        int numRegistro=0;
+        
+        String[] aEj1 = {"a","b","c"};
+        String[] aEj2 = new String[vGlobalMAX];
+        int[] aEj3 = new int[vGlobalMAX];
+        
+        //ej para asignar un valor en una posicion especif del arreglo
+        aEj2[5] = "hola";
+        
+        //ej de un ciclo para asignar String vacio a todo el arreglo
+        for(int i=0; i < aEj2.length;i++){
+            aEj2[i]="";
+        }
+        
+        //ej de un ciclo para asignar ceros a todo el arreglo
+        for(int i=0; i < aEj2.length;i++){
+            aEj3[i]=0;
+        }
+        
+        
+        
+    }
+    
     public static void generarSplit(){
         int resultado=0;
         String[] arreglo;
