@@ -32,6 +32,11 @@ public class Aerolinea {
         p2.setNombre("Laura");
         p2.setApellidos("Gutierrez");
         p2.setLugarNacionalidad("Cartago");
+       
+        Persona p3 = new Persona();
+        p2.setNombre("Mario");
+        p2.setApellidos("Rodriguez");
+        p2.setLugarNacionalidad("Alajuela");        
         
         //imprimir nombre completo de las personas 
         p1.imprimirNombreCompleto();
@@ -39,5 +44,9 @@ public class Aerolinea {
         
         p2.imprimirNombreCompleto();
         System.out.println(p2.getLugarNacionalidad());
+        
+        p1.imprimirTodosDatos();
+        p2.imprimirTodosDatos();
+        p3.imprimirTodosDatos();
     }
 }

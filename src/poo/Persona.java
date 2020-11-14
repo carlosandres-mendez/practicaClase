@@ -13,6 +13,11 @@ public class Persona{
         System.out.println("Nombre completo: "+ nombre+" "+apellidos);
     } 
     
+    public void imprimirTodosDatos(){
+        imprimirNombreCompleto();
+        System.out.println("Edad: "+ edad+" "+sexo + "" + lugarNacionalidad);
+    }    
+    
     //metodos gets y sets
     public String getNombre() {
         return nombre;
