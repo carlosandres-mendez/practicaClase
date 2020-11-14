@@ -7,6 +7,19 @@ public class Persona{
     int edad;
     boolean sexo;
     String lugarNacionalidad;
+    Tiquete tiquete;
+
+    public Persona(){
+    }
+    
+    public Persona(String nombre, String apellidos, int edad, boolean sexo, String lugarNacionalidad, Tiquete tiquete) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
+        this.sexo = sexo;
+        this.lugarNacionalidad = lugarNacionalidad;
+        this.tiquete = tiquete;
+    }
 
     //metodos de funcionalidad
     public void imprimirNombreCompleto(){
@@ -58,4 +71,13 @@ public class Persona{
     public void setLugarNacionalidad(String lugarNacionalidad) {
         this.lugarNacionalidad = lugarNacionalidad;
     }
+
+    public Tiquete getTiquete() {
+        return tiquete;
+    }
+
+    public void setTiquete(Tiquete tiquete) {
+        this.tiquete = tiquete;
+    }
+    
 }
