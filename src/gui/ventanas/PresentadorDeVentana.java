@@ -1,3 +1,5 @@
+package gui.ventanas;
+
 import javax.swing.JFrame; // Hay que incluir la clase JFrame
 public class PresentadorDeVentana {
 
