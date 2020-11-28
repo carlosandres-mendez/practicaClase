@@ -5,11 +5,11 @@ import java.util.Date;
 
 public class Examen {
     Alumno alumno;
-    int nota;
-    String nombreMateria;
-    int puntosTotal;
-    int puntosObtenidos;
-    Date fecha;
+    private int nota;
+    private String nombreMateria;
+    private int puntosTotal;
+    private int puntosObtenidos;
+    private Date fecha;
 
     public Examen(){
     }

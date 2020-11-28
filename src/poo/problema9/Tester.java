@@ -10,6 +10,8 @@ public class Tester {
         Scanner s = new Scanner(System.in);
 
         while (true) {
+            
+            
             /*
             Alumno a = new Alumno();
             System.out.println("Digite el nombre del alumno:");
@@ -36,12 +38,31 @@ public class Tester {
             System.out.println("Digite puntos obtenidos:");
             int puntosObtenidos = s.nextInt();
             
+            //Padre familiar
+            System.out.println("Digite nombre padre:");
+            String nombrePadre = s.next();
+            System.out.println("Digite apellidos padre:");
+            String apellidosPadre = s.next();
+            
+            PadreFamiliar p1 = new PadreFamiliar(nombrePadre,apellidosPadre);
+            alum.setPadre(p1);
+            
             Examen e = new Examen(alum,nota,puntosTotales,
                     puntosObtenidos,null);
             
-            sistema.agregarEx(e);
+            if(sistema.agregarEx(e)){
             
-            sistema.mostrarExamenes();
+                System.out.println(e.getNota());
+                System.out.println(e.getPuntosObtenidos());
+                //e.alumno.imprimirPadreFamiliar();
+                e.getAlumno().imprimirPadreFamiliar();
+
+                sistema.mostrarExamenes();
+            }
+            else{
+                System.out.println("No hay suficiente espacio.");
+            }
+            
         }
 
     }
