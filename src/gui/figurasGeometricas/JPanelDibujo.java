@@ -23,14 +23,14 @@ public class JPanelDibujo extends JPanel{
         super.paint(g);
         
         //LINEAS
-        g.drawLine(25,90,60,50);
+        g.drawLine(25,90,60,50); //dibuja una línea
 
         //OVALOS
-        g.drawOval(150,50,100,100);
-        g.setColor(Color.blue);
-        g.fillOval(340,50,80,120);
+        g.drawOval(150,50,100,100); //dibuja un ovalo sin fondo
+        g.setColor(Color.blue);     
+        g.fillOval(340,50,80,120);  //dibuja un ovalo con fondo azul
         g.setColor(Color.yellow);
-        g.fillOval(200,160,160,80); 
+        g.fillOval(200,160,160,80); //dibuja un ovalo con fondo amarillo
         
         //RECTANGULOS
         g.setColor(Color.blue);
