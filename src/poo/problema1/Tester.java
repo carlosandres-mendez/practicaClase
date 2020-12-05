@@ -45,10 +45,26 @@ public class Tester {
                 }
             }
             else if(numMonedaOrigen==2){//Dolar
-
+                if(numMonedaSalida==1){//Colon
+                    System.out.println("El valor equivalente es: "+maq.convertir(mDolar, mColon, cantidad));
+                }
+                else if(numMonedaSalida==2){ //Dolar
+                    System.out.println("El valor equivalente es: "+maq.convertir(mDolar, mDolar, cantidad)); 
+                }
+                else { //euro
+                    System.out.println("El valor equivalente es: "+maq.convertir(mDolar, mEuro, cantidad)); 
+                }
             }
             else{ //Euro
-
+                if(numMonedaSalida==1){//Colon
+                    System.out.println("El valor equivalente es: "+maq.convertir(mEuro, mColon, cantidad));
+                }
+                else if(numMonedaSalida==2){ //Dolar
+                    System.out.println("El valor equivalente es: "+maq.convertir(mEuro, mDolar, cantidad)); 
+                }
+                else { //euro
+                    System.out.println("El valor equivalente es: "+maq.convertir(mEuro, mEuro, cantidad)); 
+                }
             }
         }
     }
