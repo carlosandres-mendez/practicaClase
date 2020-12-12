@@ -17,7 +17,7 @@ public class Nota {
         
             try {
                 quiz[indice++] = notaEstudiante;
-
+               
 
             } catch (ArrayIndexOutOfBoundsException ae) {
                 System.out.println("demasiados datos para el vector de quices");
