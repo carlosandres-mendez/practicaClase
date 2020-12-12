@@ -1,7 +1,7 @@
 /*
  * https://www.geeksforgeeks.org/selection-sort/
  */
-package algoritmo;
+package algoritmos;
 
 // Java program for implementation of Selection Sort 
 class SelectionSort 
